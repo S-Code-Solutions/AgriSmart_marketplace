@@ -1,0 +1,24 @@
+.image-with-text {
+  background-repeat: no-repeat;
+  background-image: url("https://gaviaspreview.com/wp/orgarium/wp-content/uploads/2021/10/breadcrumb.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.image-with-text p {
+  position: absolute;
+  align-items: center;
+
+  align-content: center;
+  top: 30%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  line-height: 1;
+  font-family: Handlee;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  //margin-top: 30px;
+}
