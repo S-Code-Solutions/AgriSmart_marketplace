@@ -1,0 +1,53 @@
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+.tabactive {
+  min-width: 129px;
+  padding: 7px 5px 13px;
+  padding-inline-end: 9px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  background-image: url(https://new-biolife.kutethemes.net/wp-content/uploads/2021/08/07-img-19.png);
+}
+.ovic-tab.style-04 .tab-item a {
+  min-width: 129px;
+  padding: 7px 5px 13px;
+  padding-inline-end: 9px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-hover-style:hover{
+padding: 0.5rem!important;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

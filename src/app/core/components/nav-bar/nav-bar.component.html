@@ -1,75 +1,54 @@
-<nav class="navbar sticky-bottom navbar-expand-lg bg-body-tertiary main-menu">
-  <div class="container-fluid main-menus">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-<!--      <div class="container">-->
-<!--        <nav class="navbar" style="background: blue; height: 100px;width: 1080px; position: absolute; z-index: 100">-->
-<!--          <div class="container-fluid">-->
-<!--            <a class="navbar-brand" href="#">Navbar</a>-->
-<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--              <span class="navbar-toggler-icon"></span>-->
-<!--            </button>-->
-<!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-<!--              <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
-<!--                <li class="nav-item">-->
-<!--                  <a class="nav-link active" aria-current="page" href="#">Home</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                  <a class="nav-link" href="#">Link</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item dropdown">-->
-<!--                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                    Dropdown-->
-<!--                  </a>-->
-<!--                  <ul class="dropdown-menu">-->
-<!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
-<!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
-<!--                    <li><hr class="dropdown-divider"></li>-->
-<!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-<!--                  </ul>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                  <a class="nav-link disabled">Disabled</a>-->
-<!--                </li>-->
-<!--              </ul>-->
-<!--              <form class="d-flex" role="search">-->
-<!--                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
-<!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
-<!--              </form>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </nav>-->
-<!--      </div>-->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<div class="d-flex flex-row justify-content-around">
+  <div class="p-2">
+    <div class="d-flex flex-row">
+      <div ><mat-icon aria-hidden="false" aria-label="Example mail icon" fontIcon="mail">mail</mat-icon></div>
+      <div >&nbsp;Biolife@company.com</div>
     </div>
   </div>
-</nav>
+  <div class="p-2"></div>
+  <div class="p-2">
+    <div class="d-flex flex-row">
+      <div ><mat-icon aria-hidden="false" aria-label="Example account_circle icon" fontIcon="account_circle">account_circle</mat-icon></div>
+      <div >&nbsp;Login/Register</div>
+    </div>
+  </div>
+</div>
+<div class="d-flex flex-row justify-content-around">
+  <div class="p-2"><img src="https://i.ibb.co/8b5YT18/core-Agro-Logo1.png" alt="core-Agro-Logo1" style="width: 170px"></div>
+  <div class="p-2">
+    <nav  class="d-flex flex-row mt-3 nav text-center">
+      <a class="nav-link text-center" href="#" [routerLink]="'./homepage'" role="listitem" routerLinkActive="buttonActive">Home</a>
+      <a class="nav-link text-center" href="#" [routerLink]="'./shop'" role="listitem" routerLinkActive="buttonActive">&nbsp;&nbsp;Shop</a>
+      <a class="nav-link text-center" href="#" [routerLink]="'./auction'" role="listitem" routerLinkActive="buttonActive">&nbsp;&nbsp;Blog</a>
+      <a class="nav-link text-center" href="#" [routerLink]="'./forum'" role="listitem" routerLinkActive="buttonActive">&nbsp;&nbsp;Pages</a>
+<!--      <a class="nav-link" href="#" [routerLink]="'./homepage'" role="listitem" routerLinkActive="buttonActive">&nbsp;&nbsp;Purchase</a>-->
+    </nav >
+  </div>
+  <div class="p-2">
+    <div class="d-flex flex-row mt-3">
+      <div ><mat-icon aria-hidden="false" aria-label="Example favorite icon" fontIcon="favorite" matBadge="8" matBadgePosition="below after" matBadgeColor="warn"></mat-icon></div>
+      <div >&nbsp;&nbsp;<mat-icon aria-hidden="false" aria-label="Example local_mall icon" fontIcon="local_mall" matBadge="8" matBadgePosition="below after" matBadgeColor="warn"></mat-icon></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-around">
+  <div class="p-2"></div>
+  <div class="p-2 justify-content-center"><form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form></div>
+  <div class="p-2">
+    <div class="d-flex flex-row">
+      <div ><mat-icon aria-hidden="false" aria-label="Example call icon" fontIcon="call" >call</mat-icon></div>
+      <div >
+<!--        <div class="d-flex flex-column">-->
+          <div >(+900) 123 456 7891</div>
+<!--          <div >Mon-Fri: 8:30am-7:30pm; Sat-Sun: 9:30am-4:30pm</div>-->
+<!--        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+

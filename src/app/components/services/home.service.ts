@@ -12,7 +12,7 @@ export class HomeService {
       slidesStore: [
         {
           id: "1",
-          src: 'https://gaviaspreview.com/wp/orgarium/wp-content/uploads/2022/01/slider-5.jpg',
+          src: 'https://i.ibb.co/wsdhfY4/ezgif-com-webp-to-jpg-1-01.jpg',
           alt: 'Image_1',
           title: 'Image_1'
         },

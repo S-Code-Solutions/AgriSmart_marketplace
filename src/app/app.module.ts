@@ -11,7 +11,7 @@ import { ContactUsPageComponent } from './components/components/contact-us-page/
 import { FooterComponent } from './core/components/footer/footer.component';
 import { ServicePageComponent } from './components/components/service-page/service-page.component';
 import {CarouselModule} from "ngx-owl-carousel-o";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { FinancialServicesComponent } from './components/components/service-page/components/financial-services/financial-services.component';
 import { EducationServicesComponent } from './components/components/service-page/components/education-services/education-services.component';
@@ -19,6 +19,16 @@ import { WarehouseServicesComponent } from './components/components/service-page
 import { ConsultingServicesComponent } from './components/components/service-page/components/consulting-services/consulting-services.component';
 import { PublicForumComponent } from './components/components/public-forum/public-forum.component';
 import { WeatherForecastingComponent } from './components/components/weather-forecasting/weather-forecasting.component';
+import {MatIconModule} from "@angular/material/icon";
+import {MatBadgeModule} from "@angular/material/badge";
+import {MatButtonModule} from "@angular/material/button";
+import { ProductsComponent } from './components/components/products/products.component';
+import { AuctionComponent } from './components/components/auction/auction.component';
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatSliderModule} from "@angular/material/slider";
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
+import {MaterialFileInputModule} from "ngx-material-file-input";
 
 @NgModule({
   declarations: [
@@ -35,7 +45,9 @@ import { WeatherForecastingComponent } from './components/components/weather-for
     WarehouseServicesComponent,
     ConsultingServicesComponent,
     PublicForumComponent,
-    WeatherForecastingComponent
+    WeatherForecastingComponent,
+    ProductsComponent,
+    AuctionComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +55,15 @@ import { WeatherForecastingComponent } from './components/components/weather-for
     CarouselModule,
     FormsModule,
     BrowserAnimationsModule,
+    MatIconModule,
+    MatBadgeModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    ReactiveFormsModule,
+    MatSliderModule,
+    MatInputModule,
+    MatSelectModule,
+    MaterialFileInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

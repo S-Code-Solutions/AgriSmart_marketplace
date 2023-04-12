@@ -1,0 +1,203 @@
+<section>
+  <img src="https://new-biolife.b-cdn.net/wp-content/uploads/2021/09/page-head.jpg" style="width: 1349px">
+  <h4 style="color: white; font-size: 35px; font-weight: bold; position: absolute;top: 220px; left:632px">Products</h4>
+</section>
+
+<section class="mt-4 mb-5">
+  <div class="row ms-2 me-2">
+
+    <div  class=" col-xl-3 col-lg-3 col-md-3 col-sm-3">
+      <div class="d-flex flex-column">
+        <div class="p-2">
+          <div class="p-2 justify-content-center align-items-center text-center" style="width: 300px;background: #E8F5FF; border-radius: 8px;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+            <div class="d-flex flex-column">
+              <div class="p-2">
+                <h6>Categories</h6>
+              </div>
+              <div class="p-2">
+                <section class="example-section" [formGroup]="toppings">
+                  <p><mat-checkbox formControlName="pepperoni">Pepperoni</mat-checkbox></p>
+                  <p><mat-checkbox formControlName="extracheese">Extra Cheese</mat-checkbox></p>
+                  <p><mat-checkbox formControlName="mushroom">Mushroom</mat-checkbox></p>
+                </section>
+              </div>
+              <div class="p-2">
+                <button mat-raised-button style="background: #49A010;color: white;border-radius: 10px">Filter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="p-2 justify-content-center align-items-center text-center" style="width: 300px;background: #E8F5FF; border-radius: 8px;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+            <div class="d-flex flex-column">
+              <div class="p-2">
+                <h6>Price</h6>
+              </div>
+              <div class="p-2">
+                <mat-slider
+                  thumbLabel
+                  [displayWith]="formatLabel"
+                  tickInterval="1000"
+                  step="1000"
+                  min="0"
+                  max="100000"
+                  aria-label="units"></mat-slider>
+
+              </div>
+              <div class="p-2">
+                <p><span style="color: #9999AF">Price:</span> $0 — $100</p>
+              </div>
+              <div class="p-2">
+                <button mat-raised-button style="background: #49A010;color: white;border-radius: 10px">Filter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="p-2 justify-content-center align-items-center text-center" style="width: 300px;background: #E8F5FF; border-radius: 8px;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+            <div class="d-flex flex-column">
+              <div class="p-2">
+                <h6>Sort</h6>
+              </div>
+              <div class="p-2">
+                <mat-form-field appearance="outline">
+                  <mat-label>Select an option</mat-label>
+                  <mat-select [(value)]="selected">
+                    <mat-option>None</mat-option>
+                    <mat-option value="option1">Option 1</mat-option>
+                    <mat-option value="option2">Option 2</mat-option>
+                    <mat-option value="option3">Option 3</mat-option>
+                  </mat-select>
+                </mat-form-field>
+
+                <p>You selected: {{selected}}</p>
+
+              </div>
+              <div class="p-2">
+                <button mat-raised-button style="background: #49A010;color: white;border-radius: 10px">Filter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div  class=" col-xl-9 col-lg-9 col-md-9 col-sm-9 mt-3">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 p-2 justify-content-center align-items-center text-center">
+          <div class="p-2" style="background: white">
+            <div class="d-flex flex-column box-hover-style" >
+              <div class="p-2">
+                <img src="https://i.ibb.co/5jd3jpS/ezgif-com-webp-to-jpg-2.jpg" alt="ezgif-com-webp-to-jpg-2" border="0">
+              </div>
+              <div class="">
+                <p>Vegeatbles</p>
+              </div>
+              <div class="">
+                <h6>Sapa Fresh Pumpkin</h6>
+              </div>
+              <div class="p-2">
+                <h6 style="color: #49A010">$53.00</h6>
+              </div>
+              <div class="p-2">
+                <div class="d-flex flex-row justify-content-center align-items-center text-center">
+                  <div>
+                    <mat-icon aria-hidden="false" aria-label="Example favorite icon" fontIcon="favorite">favorite</mat-icon>
+                  </div>&nbsp;&nbsp;
+                  <div>
+                    <button style="background: #49A010;color: white; border-radius: 10px" mat-raised-button color="primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 p-2 justify-content-center align-items-center text-center" >
+          <div class="p-2" style="background: white">
+            <div class="d-flex flex-column box-hover-style" >
+              <div class="p-2">
+                <img src="https://i.ibb.co/RQYWZX8/ezgif-com-webp-to-jpg-3.jpg" alt="ezgif-com-webp-to-jpg-3" border="0">
+              </div>
+              <div class="">
+                <p>Vegeatbles</p>
+              </div>
+              <div class="">
+                <h6>Sapa Fresh Pumpkin</h6>
+              </div>
+              <div class="p-2">
+                <h6 style="color: #49A010">$53.00</h6>
+              </div>
+              <div class="p-2">
+                <div class="d-flex flex-row justify-content-center align-items-center text-center">
+                  <div>
+                    <mat-icon aria-hidden="false" aria-label="Example favorite icon" fontIcon="favorite">favorite</mat-icon>
+                  </div>&nbsp;&nbsp;
+                  <div>
+                    <button style="background: #49A010;color: white; border-radius: 10px" mat-raised-button color="primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 p-2 justify-content-center align-items-center text-center" >
+          <div class="p-2" style="background: white">
+            <div class="d-flex flex-column box-hover-style" >
+              <div class="p-2">
+                <img src="https://i.ibb.co/pbzcrt8/ezgif-com-webp-to-jpg-4.jpg" alt="ezgif-com-webp-to-jpg-4" border="0">
+              </div>
+              <div class="">
+                <p>Vegeatbles</p>
+              </div>
+              <div class="">
+                <h6>Sapa Fresh Pumpkin</h6>
+              </div>
+              <div class="p-2">
+                <h6 style="color: #49A010">$53.00</h6>
+              </div>
+              <div class="p-2">
+                <div class="d-flex flex-row justify-content-center align-items-center text-center">
+                  <div>
+                    <mat-icon aria-hidden="false" aria-label="Example favorite icon" fontIcon="favorite">favorite</mat-icon>
+                  </div>&nbsp;&nbsp;
+                  <div>
+                    <button style="background: #49A010;color: white; border-radius: 10px" mat-raised-button color="primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 p-2 justify-content-center align-items-center text-center" >
+          <div class="p-2" style="background: white">
+            <div class="d-flex flex-column box-hover-style" >
+              <div class="p-2">
+                <img src="https://i.ibb.co/9GrpHPc/ezgif-com-webp-to-jpg-5.jpg" alt="ezgif-com-webp-to-jpg-5" border="0">
+              </div>
+              <div class="">
+                <p>Vegeatbles</p>
+              </div>
+              <div class="">
+                <h6>Sapa Fresh Pumpkin</h6>
+              </div>
+              <div class="p-2">
+                <h6 style="color: #49A010">$53.00</h6>
+              </div>
+              <div class="p-2">
+                <div class="d-flex flex-row justify-content-center align-items-center text-center">
+                  <div>
+                    <mat-icon aria-hidden="false" aria-label="Example favorite icon" fontIcon="favorite">favorite</mat-icon>
+                  </div>&nbsp;&nbsp;
+                  <div>
+                    <button style="background: #49A010;color: white; border-radius: 10px" mat-raised-button color="primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
