@@ -1,0 +1,167 @@
+<section>
+  <img src="https://new-biolife.b-cdn.net/wp-content/uploads/2021/09/page-head.jpg" style="width: 1349px">
+  <h4 style="color: white; font-size: 35px; font-weight: bold; position: absolute;top: 220px; left:632px">Cart</h4>
+</section>
+
+<section class="mt-5 mb-5">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-2">
+
+        <div><h6>PRODUCT</h6></div>
+
+
+      </div>
+      <div class="col-2">
+
+        <div><h6>NAME</h6></div>
+
+
+      </div>
+      <div class="col-2">
+
+        <div><h6>QUANTITY</h6></div>
+
+      </div>
+      <div class="col-2">
+
+        <div><h6>PRICE</h6></div>
+
+      </div>
+
+      <div class="col-2">
+
+        <div><h6></h6></div>
+
+      </div>
+
+      <div class="col-2">
+
+        <div><h6> CART TOTALS </h6></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--<section  class="mt-5 mb-5" *ngFor="let items of cartProducts">-->
+<section class="mt-5 mb-5">
+  <div class="container text-center justify-content-center">
+    <div class="row ">
+      <div class="col-2">
+
+        <div>
+          <!--          <img [src]="items.product.imageURL" alt="img" style="width: 124px; margin-top: -55px">-->
+          <img src="https://i.ibb.co/5jd3jpS/ezgif-com-webp-to-jpg-2.jpg" alt="img"
+               style="width: 124px; margin-top: -55px">
+        </div>
+
+      </div>
+      <div class="col-2">
+
+        <!--        <div>{{items.product.name}}</div>-->
+        <div>Sapa Fresh Pumpkin</div>
+
+      </div>
+      <div class="col-2">
+
+        <div class="d-flex flex-row justify-content-around">
+          <div class="example-button-container">
+            <!--            <button mat-mini-fab (click)="Decrement(items.cartId,items.product.productId,items.qty)" color="warn" aria-label="Example icon button with a filter list icon">-->
+            <!--              <mat-icon>remove</mat-icon>-->
+            <!--            </button>-->
+            <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
+              <mat-icon>remove</mat-icon>
+            </button>
+          </div>
+          <div class="mt-2">
+            <!--            {{items.qty}}-->
+            10
+          </div>
+          <div class="example-button-container">
+            <!--            <button mat-mini-fab (click)="Increment(items.cartId,items.product.productId,items.qty)" color="primary" aria-label="Example icon button with a filter list icon">-->
+            <!--              <mat-icon>add</mat-icon>-->
+            <!--            </button>-->
+            <button mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon">
+              <mat-icon>add</mat-icon>
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-2">
+
+        <div>
+          <!--          <h6> {{items.product.unitPrice  | currency: '$'}} </h6>-->
+          <h6> $50.00 </h6>
+        </div>
+
+      </div>
+
+      <div class="col-2">
+
+        <div class="example-button-container">
+          <!--          <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon" (click)="RemoveItem(items.cartId)">-->
+          <!--            <mat-icon>remove</mat-icon>-->
+          <!--          </button>-->
+          <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
+            <mat-icon>remove</mat-icon>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="col-2">
+
+        <div class="d-flex flex-row justify-content-around">
+          <h6>Subtotal</h6>
+          <!--          <h6> {{items.qty * items.product.unitPrice  | currency: '$'}} </h6>-->
+          <h6> $50.00 </h6>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="mt-5 mb-5">
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-3">
+
+        <div>Coupon</div>
+
+      </div>
+      <div class="col-2">
+
+        <div></div>
+
+      </div>
+      <div class="col-2">
+
+        <div></div>
+
+      </div>
+      <div class="col-2">
+
+        <div>UPDATE CART</div>
+
+      </div>
+      <div class="col-3 ">
+
+        <div class="d-flex flex-row justify-content-around">
+          <h6>Total</h6>
+          <!--          <h4>{{ this.totalamount | currency: '$'}}</h4>-->
+          <h4>$50.00</h4>
+        </div>
+        <!--        <button type="button" class="btn-primary mt-4" routerLinkActive="buttonActive" [routerLink]="'./checkout'" style="background: #2ecc71; color: white"  href="#">Proceed To Checkout</button>-->
+        <button mat-raised-button class="mt-4" routerLinkActive="buttonActive" [routerLink]="'./checkout'"
+                style="background: #27ae60; color: white" href="#">Proceed To Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+</section>

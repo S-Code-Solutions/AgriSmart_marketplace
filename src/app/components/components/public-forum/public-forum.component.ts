@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {ForumService} from "../../services/forum.service";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-public-forum',
@@ -12,9 +14,12 @@ export class PublicForumComponent implements OnInit {
   comiForm!: FormGroup;
   fileToUpload: any;
   fileName = 'Select File';
+  imageUrls: any;
+  newsList!: any[];
+  private allCropsSub!: Subscription;
 
 
-  constructor() { }
+  constructor(private forumService:ForumService) { }
 
   ngOnInit(): void {
     this.comiForm = new FormGroup({
@@ -25,6 +30,8 @@ export class PublicForumComponent implements OnInit {
         Validators.required
       ]),
     });
+
+    this.getNews();
   }
 
   handleFileInput(file: any) {
@@ -47,5 +54,18 @@ export class PublicForumComponent implements OnInit {
 
   addComment() {
 
+  }
+
+  getNews(){
+
+    this.allCropsSub = this.forumService.getAllNews()
+      // .pipe(timeout(4000))
+      .subscribe(result => {
+        console.log(result)
+        // this.dataSource = result.content;
+        this.newsList = result.articles;
+      }, error => {
+        console.log(error);
+      });
   }
 }

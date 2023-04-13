@@ -161,8 +161,25 @@
       </div>
     </div>
 
-    <div class="p-2" style="width: 300px; height: 600px; border-radius: 9px; background: #55ACEE">
-
+    <div class="p-2" style="width: 300px; height: 600px; border-radius: 9px; background: #E8F8F9; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;overflow-y:scroll">
+      <div class="d-flex flex-column" *ngFor="let item of newsList">
+        <div class="p-2">
+          <div class="d-flex flex-column">
+            <div class="p-2">
+              <img [src]="item.urlToImage" style="width: 245px;">
+            </div>
+            <div class="p-1">
+              <p style="font-weight: bold">{{item.title}}</p>
+            </div>
+            <div class="p-1">
+              <p style="margin-top: -22px;">{{item.author}}</p>
+            </div>
+            <div class="p-1">
+              <p style="color: #8B939D;margin-top: -22px">{{item.publishedAt}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

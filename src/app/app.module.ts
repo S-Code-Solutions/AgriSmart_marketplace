@@ -29,6 +29,18 @@ import {MatSliderModule} from "@angular/material/slider";
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {MaterialFileInputModule} from "ngx-material-file-input";
+import { WishlistComponent } from './components/components/wishlist/wishlist.component';
+import {HttpClientModule} from "@angular/common/http";
+import {CookieModule} from "ngx-cookie";
+import { CartComponent } from './components/components/cart/cart.component';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { CheckOutComponent } from './components/components/check-out/check-out.component';
+import {MatRadioModule} from "@angular/material/radio";
+import {MatDialogModule} from "@angular/material/dialog";
+import { PaymentComponent } from './components/components/check-out/components/payment/payment.component';
+import { BidsComponent } from './components/components/bids/bids.component';
+import {MatMenuModule} from "@angular/material/menu";
+import { OrdersComponent } from './components/components/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -47,24 +59,36 @@ import {MaterialFileInputModule} from "ngx-material-file-input";
     PublicForumComponent,
     WeatherForecastingComponent,
     ProductsComponent,
-    AuctionComponent
+    AuctionComponent,
+    WishlistComponent,
+    CartComponent,
+    CheckOutComponent,
+    PaymentComponent,
+    BidsComponent,
+    OrdersComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    CarouselModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatBadgeModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    ReactiveFormsModule,
-    MatSliderModule,
-    MatInputModule,
-    MatSelectModule,
-    MaterialFileInputModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        CarouselModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatBadgeModule,
+        MatButtonModule,
+        MatCheckboxModule,
+        ReactiveFormsModule,
+        MatSliderModule,
+        MatInputModule,
+        MatSelectModule,
+        MaterialFileInputModule,
+        HttpClientModule,
+        CookieModule.forRoot(),
+        MatSnackBarModule,
+        MatRadioModule,
+        MatDialogModule,
+        MatMenuModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
